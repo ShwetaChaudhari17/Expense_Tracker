@@ -8,7 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware  #Cross-Origin Resource Shari
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware, 
-    allow_origin = ["*"],
+    allow_origins = ["*"],
     allow_credentials = True,
     allow_methods=["*"],
     allow_headers=["*"]
